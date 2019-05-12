@@ -1,0 +1,340 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Zoxic</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="shortcut icon" href="img/phone1.png" >
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/jquery.1.6.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>/*<![CDATA[*/!window.QUnit && document.write('<script src="js/qunit.js"><\/script>')/*]]>*/</script>
+<script>/*<![CDATA[*/
+
+  if (QUnit.urlParams.lib && QUnit.urlParams.ver) {
+    document.write('<script src="https://ajax.googleapis.com/ajax/libs/' +
+      QUnit.urlParams.lib + '/' +
+      QUnit.urlParams.ver + '/' +
+      QUnit.urlParams.lib + '.js"><\/script>');
+  } else {
+    document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
+  }
+
+  if (QUnit.urlParams.commit) {
+    document.write('<script src="js/simpleCart.js' + QUnit.urlParams.commit + '/simpleCart.js"><\/script>');
+    document.write('<script src="js/test.core.js' + QUnit.urlParams.commit + '/test/test.core.js"><\/script>');
+  } else {
+    document.write('<script src="js/simpleCart.js"><\/script>');
+    document.write('<script type="text/javascript" src="js/test.core.js"><\/script>');
+  }
+	/*]]>*/</script>
+
+<script src="js/simpleCart.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/typed.min.js"></script>
+      <script src="js/main.js"></script>
+    </head>
+    <body>
+      <nav style="" class="navbar navbar-expand-md  navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="img/main.png" style="width: 95px;"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            
+            </button>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav navbar-right ml-auto">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Laptop</a></li>
+              <li><a href="#cart">Cart</a></li>
+              <li> <button type="button" class="btn btn-primary"><a style="text-decoration:none; " href="#checkout"> Cart</a><i
+                    class="fa fa-shopping-cart fa-2x">
+                    <span id="simpleCart_quantity" class="simpleCart_quantity badge badge-primary"><a href="javascript:;"
+                        style="font-family: Tahoma; font-size: 20px; " class="simpleCart_empty"></br></span>
+                    <label style="font-family:Century Gothic; text-decoration: none; color: orange;">Amount:</label> <span
+                      style="font-family:Century Gothic; text-decoration: none; color: white;" class="simpleCart_total"></span>
+                  </i> <a href="javascript:;" style="font-family: Tahoma; font-size: 20px; text-decoration: none;"
+                    class="simpleCart_empty">X</span>
+                  </a></button>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+      
+      <div class="col-sm-9 toppanel">
+        <h4 class="estate">WELCOME TO ZOXIC</h4>
+        <p class="texttyped">THE <span class="typed"></span>SERVICE FOR YOU</p>
+        <br />
+        <br />
+       
+<br>
+        <div class="buttons_container">
+          <div style="background-color:orange;" class="button button_color_1 text-center trans_200">
+            <a href="#">LOGIN</a>
+          </div>
+        
+          <div style="background-color: rgb(60, 2, 87);" class="button button_color_2 text-center trans_200">
+            <a href="#">REGISTER</a>
+          </div>
+        </div>
+       
+
+      </center>
+      </div>
+     
+        
+
+      <h1 class="recent">Latest Phones</h1>
+      <hr>
+      <div id="phones" class="products">
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/phone1.png" /></center>
+          </div>
+          <br><br><p></p>
+          <div class="product-info">
+            <h5 class="item_name">Infinix Hot 6</h5>
+            <h6 class="item_price">$500.90</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i class="fa fa-shopping-cart "></i></button><br><br>
+            
+          </div>
+        </div>
+     
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/phone2.png" /></center>
+          </div>
+          <br><br>
+          <p></p>
+          <div class="product-info">
+            <h5 class="item_name">ZTE Axon 3</h5>
+            <h6 class="item_price">$280.90</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                class="fa fa-shopping-cart "></i></button><br><br>
+           
+          </div>
+        </div>
+        <div class="product-card simpleCart_shelfItem">
+        <div class="product-img">
+          <center><img class="item_thumb" src="img/phone3.png" /></center>
+        </div>
+        <br><br>
+        <p></p>
+        <div class="product-info">
+          <h5 class="item_name">Itel P33</h5>
+          <h6 class="item_price">$880.65</h6>
+          <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+              class="fa fa-shopping-cart "></i></button><br><br>
+          
+        </div>
+        </div>
+        
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/phone4 (2).png" /></center>
+          </div>
+          <br><br>
+          <p></p>
+          <div class="product-info">
+            <h5 class="item_name">Samsung A7</h5>
+            <h6 class="item_price">$352.39</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                class="fa fa-shopping-cart "></i></button><br><br>
+            
+          </div>
+        </div>
+
+        <div class="product-card simpleCart_shelfItem">
+        <div class="product-img">
+          <center><img class="item_thumb" src="img/phone4.png" /></center>
+        </div>
+        <br><br>
+        <p></p>
+        <div class="product-info">
+          <h5 class="item_name">Tecno K5</h5>
+          <h6 class="item_price">$502.30</h6>
+          <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+              class="fa fa-shopping-cart "></i></button><br><br>
+         
+        </div>
+        </div>
+        
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/phone7 (2).png" /></center>
+          </div>
+          <br><br>
+          <p></p>
+          <div class="product-info">
+            <h5 class="item_name">Oppo F11 Pro</h5>
+            <h6 class="item_price">$960.05</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                class="fa fa-shopping-cart "></i></button><br><br>
+           
+          </div>
+        </div>
+
+        <div class="product-card simpleCart_shelfItem">
+        <div class="product-img">
+          <center><img class="item_thumb" src="img/phone7.png" /></center>
+        </div>
+        <br><br><br>
+        <p></p>
+        <div class="product-info">
+          <h5 class="item_name">Samsung S4</h5>
+          <h6 class="item_price">$230.50</h6>
+          <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+              class="fa fa-shopping-cart "></i></button><br><br>
+          
+        </div>
+        </div>
+        
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/phone3.png" /></center>
+
+          </div>
+          <br><br>
+          <p></p>
+          <div class="product-info">
+            <h5 class="item_name">Huawei Nova i3</h5>
+            <h6 class="item_price">$634.27</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                class="fa fa-shopping-cart "></i></button><br><br>
+            
+          </div>
+        </div>
+        
+        </div>
+        
+       
+      
+      </div>
+
+     
+        <h1 class="recent">Latest Laptops</h1>
+        <hr>
+        <div class="products">
+          <div class="product-card simpleCart_shelfItem">
+            <div class="product-img">
+              <center><img class="item_thumb" src="img/featured_7.png" /></center>
+            </div>
+            <br><br>
+            <p></p>
+            <div class="product-info"><br><br>
+              <h5 class="item_name">  Lenovo IdeaPad 14</h5>
+              <h6 class="item_price">$1250.80</h6>
+              <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                  class="fa fa-shopping-cart "></i></button><br><br>
+              
+            </div>
+          </div>
+        
+          <div class="product-card simpleCart_shelfItem">
+            <div class="product-img">
+              <center><img class="item_thumb" src="img/pc2.png" /></center>
+            </div>
+            <br><br><br>
+            <p></p>
+            <div class="product-info">
+              <h5 class="item_name">HP Stream 13</h5>
+              <h6 class="item_price">$980.75</h6>
+              <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                  class="fa fa-shopping-cart "></i></button><br><br>
+              
+            </div>
+          </div>
+          <div class="product-card simpleCart_shelfItem">
+            <div class="product-img">
+              <center><img class="item_thumb" src="img/pc6.jpg" /></center>
+            </div>
+            <br><br>
+            <p></p>
+            <div class="product-info">
+              <h5 class="item_name">MacBook 13 Air </h5>
+              <h6 class="item_price">$23880.65</h6>
+              <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                  class="fa fa-shopping-cart "></i></button><br><br>
+            
+            </div>
+          </div>
+        
+          
+        <div class="product-card simpleCart_shelfItem">
+          <div class="product-img">
+            <center><img class="item_thumb" src="img/pc7.jpg" /></center>
+          </div>
+          <br><br>
+          <p></p>
+          <div class="product-info">
+            <h5 class="item_name">MacBook 13 Pro</h5>
+            <h6 class="item_price">$1680.95</h6>
+            <button style="font-size:20px;" type="button" class="btn btn-danger item_add">ORDER NOW <i
+                class="fa fa-shopping-cart "></i></button><br><br>
+          </div>
+        </div>
+        
+        
+        </div>
+        <center> 
+          <div class="recent" id="scroll-cart">
+            <h2>Cart Items</h2>
+          </div>
+            <div class="carttotal" id="checkout">    
+        <table class="itemed simpleCart_items"></table>
+        </div> 
+        
+        <br />
+        <label>Total</label> <span id="simpleCart_total" class="simpleCart_total"></span>
+        <br />
+        Tax Rate: <span id="simpleCart_taxRate" class="simpleCart_taxRate"></span>
+        <br />
+        Tax: <span id="simpleCart_tax" class="simpleCart_tax"></span> <br />
+        Shipping:
+        <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+        -----------------------------<br />
+        Final Total:
+        <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span>
+        <br />
+        
+       <button type="submit" class="btn btn-success" ><a style="text-decoration:none; color: white; " href="javascript:;" class="simpleCart_checkout">CheckOut Products</a></button>
+        </center>
+    
+          <div class="bottom">
+          <p>Copyright &copy; Made By Bankole Ahmed <i id="flip" class="fa fa-code"></i> </p>
+          </div>
+     
+     <
+      
+      <script>
+        var typed = new Typed(".typed", {
+          strings: [
+            "CHEAP ",
+            "AFFORDABLE",
+            "QUALITY",
+            "SPLENDID",
+            "EXCELLENT"
+          ],
+          typeSpeed: 100,
+          backSpeed: 80,
+          loop: true
+        });
+       window.confirm("sometext");
+
+      </script>
+    </body>
+  </html>

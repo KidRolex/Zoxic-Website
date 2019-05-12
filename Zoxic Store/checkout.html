@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Estate Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <script>
+      /*<![CDATA[*/ !window.QUnit &&
+        document.write('<script src="js/qunit.js"><\/script>'); /*]]>*/
+    </script>
+    <script>
+      /*<![CDATA[*/
+
+      if (QUnit.urlParams.lib && QUnit.urlParams.ver) {
+        document.write(
+          '<script src="https://ajax.googleapis.com/ajax/libs/' +
+            QUnit.urlParams.lib +
+            "/" +
+            QUnit.urlParams.ver +
+            "/" +
+            QUnit.urlParams.lib +
+            '.js"><\/script>'
+        );
+      } else {
+        document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
+      }
+
+      if (QUnit.urlParams.commit) {
+        document.write(
+          '<script src="js/simpleCart.js' +
+            QUnit.urlParams.commit +
+            '/simpleCart.js"><\/script>'
+        );
+        document.write(
+          '<script src="js/test.core.js' +
+            QUnit.urlParams.commit +
+            '/test/test.core.js"><\/script>'
+        );
+      } else {
+        document.write('<script src="js/simpleCart.js"><\/script>');
+        document.write(
+          '<script type="text/javascript" src="js/test.core.js"><\/script>'
+        );
+      }
+      /*]]>*/
+    </script>
+
+    <script src="js/simpleCart.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron simpleCart_items">
+      <h1>Hi</h1>
+    </div>
+
+    <br />
+    SubTotal: <span id="simpleCart_total" class="simpleCart_total"></span>
+    <br />
+    Tax Rate: <span id="simpleCart_taxRate" class="simpleCart_taxRate"></span>
+    <br />
+    Tax: <span id="simpleCart_tax" class="simpleCart_tax"></span> <br />
+    Shipping:
+    <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+    -----------------------------<br />
+    Final Total:
+    <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span>
+    <br />
+
+    <a href="javascript:;" class="simpleCart_checkout">checkout</a>
+
+    <div id="test_id"></div>
+  </body>
+</html>
